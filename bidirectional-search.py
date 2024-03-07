@@ -48,6 +48,7 @@ def setBS(graph, topState, bottomState, exploredTop, exploredBottom, auxTopQueue
             finalPath.append(state)
         ## Reverse the list to get the correct path
         finalPath.reverse()
+        ## Delete the common state from the path
         finalPath.pop()       
         for state in bottomPath.keys():        
             finalPath.append(state)
